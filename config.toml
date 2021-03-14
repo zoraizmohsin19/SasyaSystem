@@ -1,0 +1,9 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Sasya System"
+contentdir = "content"
+publishdir = "public"
+theme = "kross-hugo"
+[params.carousel]
+    enable = true
+    
