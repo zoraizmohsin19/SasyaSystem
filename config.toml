@@ -1,4 +1,5 @@
 baseURL = "/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Sasya System"
 contentdir = "content"
