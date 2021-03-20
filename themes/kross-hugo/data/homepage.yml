@@ -6,7 +6,7 @@
 # about
 about:
   enable : true
-  content : "SASYA Systems has indigenously designed, developed and  manufactures Irrigation Management Systemto Produce Better Plants and Save Money and Resources. Sensor based irrigation system, controlled remotely through mobile app."
+  content : "SASYA Systems has indigenously designed, developed and  manufactures Irrigation Management Systemto Produce Better Plants and Save Money and Resources. Sensor based irrigation system, controlled remotely through mobile app. we connect Agriculture farms to help farmers in automating and optimising their farming activities, reducing costs and increasing yield."
   button:
     enable : true
     label : "know more"
@@ -15,7 +15,7 @@ about:
 # skill
 skill:
   enable : true
-  title : "Skills"
+  title : "Benefit"
   item:
     - title : "Web Design"
       progress : "90%"
@@ -33,10 +33,30 @@ skill:
       progress : "70%"
       color : "#ffbcaa"
 
+
 # experience
 experience:
   enable : true
-  title : "Experience"
+  title : "Our Product"
+  item: 
+    - logo : "images/experience/icon-1.png"
+      title : "Junior UX Designer"
+      company : "WEBEX"
+      duration : "Jan 2007 - Feb 2009"
+      
+    - logo : "images/experience/icon-2.png"
+      title : "UX & UI Designer"
+      company : "AUGMEDIX"
+      duration : "Mar 2009 - Aug 2014"
+      
+    - logo : "images/experience/icon-1.png"
+      title : "Senior UI Designer"
+      company : "THEMEFISHER"
+      duration : "Sep 2014 - Present"
+# experience
+experience:
+  enable : true
+  title : "Our Services"
   item: 
     - logo : "images/experience/icon-1.png"
       title : "Junior UX Designer"
@@ -53,46 +73,6 @@ experience:
       company : "THEMEFISHER"
       duration : "Sep 2014 - Present"
 
-# education
-education:
-  enable : true
-  title : "Education"
-  item:
-    - title : "Marters in UX Design"
-      year : "2006"
-      academy : "Masassusets Institute of Technology"
-      
-    - title : "Honours in Fine Arts"
-      year : "2004"
-      academy : "Harvard University"
-      
-    - title : "Higher Secondary Certificat"
-      year : "2000"
-      academy : "Cardiff School"
-      
-    - title : "Secondary School Certificate"
-      year : "1998"
-      academy : "Cardiff School"
-
-# service
-service:
-  enable : true
-  title : "Services"
-  item:
-    - title : "UI Design"
-      icon : "ti-palette"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
-
-    - title : "UX Design"
-      icon : "ti-vector"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : true
-
-    - title : "Interaction Design"
-      icon : "ti-panel"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      highlighted : false
 
 # portfolio
 portfolio:

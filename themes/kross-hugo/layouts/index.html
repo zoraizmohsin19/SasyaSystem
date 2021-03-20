@@ -9,18 +9,20 @@
 .carousel-inner > .item > a > img {
   width: 100%;
 }
+
 .hero-area{
     padding: 80px 0 20px;
     position: relative;
 }
 .navigation {
-    padding: 5px 130px;
+    padding: 0px 130px;
     transition: .3s ease;
 }
 
+
 .firstimage{
  padding-top: 80px;
- padding-left: 350px;
+ padding-left: 380px;
  text-align: center;
  position: absolute;
  animation: example 5s;
@@ -36,8 +38,8 @@
 }
 
 .secondimage{
- padding-top: 20px;
- padding-left: 650px;
+ padding-top: 50px;
+ padding-left: 680px;
  text-align: center;
  position: absolute;
  animation: example 5s;
@@ -116,6 +118,7 @@
   position: absolute;
   animation-name: fish;
   animation: example 5s;
+  animation-iteration-count: 10;
 }
 
 @keyframes fish {
@@ -135,7 +138,7 @@
  text-align: center;
  position: absolute;
  animation: leader1 5s;
- animation-iteration-count: 5;
+ animation-iteration-count: 10;
 }
 
 
@@ -165,6 +168,30 @@
  100% {left: 0px; top: 0px; opacity: 1;}
 }
 
+.contentHeading
+  {
+    color: #339910;
+    font-family: playfair display,serif!important;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: none;
+    text-align: center;
+}
+.contenttext
+  {
+    color:#000!important;;
+    font-family: playfair display,serif!important;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    text-transform: none;
+    text-align: left;
+}
+
+::selection {
+    background: #339910;;
+    color:#339910;
+}
 </style>
 
   <!-- hero area -->
@@ -196,12 +223,12 @@
 
                  <div class="firstimage">
               <div class="firstshake">
-                <img src="img/carousel/Irri12.png"  width="300" height="200">
+                <img src="img/carousel/Irri12.png"  width="330" height="220">
               </div>
             </div>
             <div class="secondimage">
               <div class="secoundshake">
-              <img src="img/carousel/Tech.png"  width="300" height="200">
+              <img src="img/carousel/Tech.png"  width="300" height="150">
             </div>
             </div>
             <div class="carousel-caption">
@@ -305,7 +332,9 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
-          <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
+
+          <h2 class="contentHeading">Why &amp; What SASYA Systems does</h2>
+          <p class="contenttext">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
           <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
