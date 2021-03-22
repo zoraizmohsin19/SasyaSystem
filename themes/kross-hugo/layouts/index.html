@@ -171,7 +171,7 @@
 .contentHeading
   {
     color: #339910;
-    font-family: playfair display,serif!important;
+    font-family: bwnistaint-xbd,serif!important;
     font-size: 22px;
     font-weight: 300;
     text-transform: none;
@@ -191,6 +191,68 @@
 ::selection {
     background: #339910;;
     color:#339910;
+}
+
+.left {
+    float: left;
+    width: 50%;
+
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+.group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 480px) {
+    .left, 
+    .right {
+        float: none;
+        width: auto;
+    }
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.financingBlock{
+
+    height: 100%;
+    min-height:100%;
+    position: relative;
+}
+
+.financingText{
+    padding:90px 0 0 104px;   
+}
+
+.financingText p{
+line-height: 30px; 
+font-size: 17px;
+font-family: "Work Sans", sans-serif;
+padding-right:70px;
+}
+.clearer {
+    clear: both;
 }
 </style>
 
@@ -236,9 +298,6 @@
           </div>
       
 
-
-
-
           <div class="item">
 
             <img src="img/carousel/pic4.png" alt="Chania" width="460" height="345">
@@ -249,13 +308,6 @@
               </div>
             </div>
         
-
-
-
-
-
-
-
 
           <div class="item">
             <img src="img/carousel/gha.png" alt="Flower" width="300" height="245">
@@ -287,40 +339,7 @@
       </div>
     
     
-    <!--
-      <div class="layer-bg w-100">
-      <img class="img-fluid w-100" src="{{`images/illustrations/leaf-bg.png` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l2">
-      <img src="{{`images/illustrations/dots-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l3">
-      <img src="{{`images/illustrations/leaf-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l4">
-      <img src="{{`images/illustrations/dots-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l5">
-      <img src="{{`images/illustrations/leaf-yellow.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l6">
-      <img src="{{`images/illustrations/leaf-cyan.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l7">
-      <img src="{{`images/illustrations/dots-group-orange.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l8">
-      <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL}}" alt="bg-shape">
-    </div>
-    <div class="layer" id="l9">
-      <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
-    </div> -->
-    <!-- social icon -->
-    <!--<ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-      {{ range site.Params.social }}
-      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
-    </ul> -->
+   
     <!-- /social icon -->
   </section>
   <!-- /hero area -->
@@ -343,6 +362,24 @@
           {{ end }}
         </div>
       </div>
+      <div class="financingBlock">
+        <div class="left">
+                  <div class="financingText">
+                      <p>There is a Low crop yield due to reliance on traditional methods of irrigation, fertigation and pest control. We connect Agriculture farms to help Farmers in automating and optimising their farming activities, reducing costs and increasing yield. </p>
+                   </div>
+
+                </div>
+      <div class="right">
+                    <div class="videoWrapper">
+                        
+                        <iframe width="560" height="600" src="https://storage.vidzai.com/VidzShareAudioVideoDocs/Sasya/SasyaSystems_WhatWeDo_v1.mp4" frameborder="0" allowfullscreen>                             </iframe>
+                    </div>
+                </div>
+
+  <div class="clearer"></div>
+
+</div>
+      
     </div>
   </section>
   <!-- /about -->

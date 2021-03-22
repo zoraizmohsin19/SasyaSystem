@@ -27,26 +27,33 @@ link = "plugins/shuffle/shuffle.min.js"
 link = "plugins/google-map/map.js"
 
 
-# menu
+
+
 [[menu.main]]
-URL = "about"
-name = "About"
+URL = "Product"  
+name = "Product"
 weight = 1
 
 [[menu.main]]
-URL = "blog"
-name = "Blog"
+URL = "Platform"
+name = "platform"
 weight = 2
 
 [[menu.main]]
-URL = "portfolio"
-name = "Portfolio"
+URL = "Gallery"  
+name = "Gallery"
 weight = 3
+
+# menu
+[[menu.main]]
+URL = "about"
+name = "About Us"
+weight = 4
 
 [[menu.main]]
 URL = "contact"
 name = "Contact"
-weight = 4
+weight = 5
 
 
 # default parameters
@@ -56,16 +63,15 @@ logo = ""
 # theme color
 theme_color = "#41228e"
 # contact info
-phone = "+880 2544 658 256"
-email = "steve.fruits@email.com"
-address = "125/A, CA Commercial Area, California, USA"
+phone = "+91 8197 239 206 | +91 9449 456 795"
+email = "santosh@sasyasystems.com"
+address = "426, 14th Main,23rd Cross,HSR Layout, Sector 7,Bangalore – 560102"
 # meta description
 author = "Johnathan Smith"
 description = "This is meta description"
 # google analytics
 google_analytics_id = "" # Your ID
-# copyright
-copyright = "Copyright &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
+
 
 
 # preloader

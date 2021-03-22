@@ -6,16 +6,16 @@
 # about
 about:
   enable : true
-  content : "SASYA Systems has indigenously designed, developed and  manufactures Irrigation Management Systemto Produce Better Plants and Save Money and Resources. Sensor based irrigation system, controlled remotely through mobile app. we connect Agriculture farms to help farmers in automating and optimising their farming activities, reducing costs and increasing yield."
+  content : 
   button:
     enable : true
-    label : "know more"
+    label : 
     URL : "about"
 
 # skill
 skill:
   enable : true
-  title : "Benefit"
+  title : "How we do it"
   item:
     - title : "Web Design"
       progress : "90%"
