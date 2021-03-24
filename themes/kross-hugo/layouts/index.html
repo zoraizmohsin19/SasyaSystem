@@ -171,17 +171,19 @@
 .contentHeading
   {
     color: #339910;
-    font-family: bwnistaint-xbd,serif!important;
-    font-size: 22px;
-    font-weight: 300;
+    font-family: work sans,sans serif!important;
+    font-size: 40px;
+    font-weight: 500;
     text-transform: none;
     text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
 }
 .contenttext
   {
     color:#000!important;;
-    font-family: playfair display,serif!important;
-    font-size: 16px;
+    font-family: work sans,sans,serif!important;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
     text-transform: none;
@@ -196,6 +198,7 @@
 .left {
     float: left;
     width: 50%;
+    padding-right:20px ;
 
 }
 
@@ -253,6 +256,35 @@ padding-right:70px;
 }
 .clearer {
     clear: both;
+}
+
+.column {
+  float: center;
+  width: 25%;
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.txtalign {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+.gr_title {
+    width: 292px;
+    text-align: center;
+    font: normal normal bold 28px Roboto Slab;
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1;
 }
 </style>
 
@@ -362,13 +394,14 @@ padding-right:70px;
           {{ end }}
         </div>
       </div>
-      <div class="financingBlock">
+      <div class="contenttext">
         <div class="left">
-                  <div class="financingText">
+                  <!--div class="financingTe"></div-->
                       <p>There is a Low crop yield due to reliance on traditional methods of irrigation, fertigation and pest control. We connect Agriculture farms to help Farmers in automating and optimising their farming activities, reducing costs and increasing yield. </p>
-                   </div>
+                      <p>We offer complete solution in automation Irrigation system, Bioflock Culture Management, Greenhouse Automation. Our products accompany you from the first idea to the serial product. Whether hardware or software, individual components, or complete solutions - we have an answer for every requirement.</p>
+                    </div>
 
-                </div>
+                
       <div class="right">
                     <div class="videoWrapper">
                         
@@ -399,23 +432,29 @@ padding-right:70px;
   {{ with site.Data.homepage.skill }}
   <!-- skills -->
   <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
+    <h2 class="contentHeading">How do we do it</h2>
+    <div class="image-container">
+      <div class="column">
+        <img src="img/measure.svg" alt="Snow" width="100%" height="100%">
+        <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
+          <h4 class="gr_title">Measure</h4>
+          <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Measure the weather forecast like temperature, Humidity, CO2, Luminescence etc. </p>
+      </div>
+      </div>
+      <div class="column">
+        <img src="img/control.svg" alt="Forest" width="100%" height="100%">
+        <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
+          <h4 class="gr_title">Control</h4>
+          <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Control the weather to achieve high yield</p>
+      </div>
+      </div>
+      <div class="column">
+        <img src="img/automation.svg" alt="Mountains" width="100%" height="100%">
+        <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
+          <h4 class="gr_title">Automation</h4>
+          <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Automate</p>
         </div>
-        {{ range .item }}
-        <div class="col-lg-3 col-sm-6 mb-4">
-          <div class="card shadow text-center">
-            <div class="position-relative rounded-top progress-wrapper" data-color="{{.color}}">
-              <div class="wave" data-progress="{{.progress}}"></div>
-            </div>
-            <div class="card-footer bg-white">
-              <h4 class="card-title">{{.title }} ({{.progress}})</h4>
-            </div>
-          </div>
-        </div>
-        {{ end }}
+      </div>
       </div>
     </div>
   </section>
@@ -425,53 +464,14 @@ padding-right:70px;
 
   {{ if site.Data.homepage.experience.enable }}
   {{ with site.Data.homepage.experience }}
-  <!-- experience -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
-          <p class="mb-0">{{.duration}}</p>
-          <h4>{{.title }}</h4>
-          <h6 class="text-light">{{.company }}</h6>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
+  
   <!-- /experience -->
   {{ end }}
   {{ end }}
 
   {{ if site.Data.homepage.education.enable }}
   {{ with site.Data.homepage.education }}
-  <!-- education -->
-  <section class="section position-relative">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-lg-6 col-md-6 mb-80">
-          <div class="d-flex">
-            <div class="mr-lg-5 mr-3">
-              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
-            </div>
-            <div>
-              <p class="text-dark mb-1">{{.year}}</p>
-              <h4>{{ .title }}</h4>
-              <p class="mb-0 text-light">{{.academy}}</p>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
+  
     <!-- bg image -->
     <img class="img-fluid edu-bg-image w-100" src="{{`images/backgrounds/education-bg.png`|relURL}}" alt="bg-image">
   </section>
@@ -482,93 +482,20 @@ padding-right:70px;
 
   {{ if site.Data.homepage.service.enable }}
   {{ with site.Data.homepage.service }}
-  <!-- services -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-        </div>
-        {{ range .item }}
-        <div class="col-md-4 mb-4">
-          <div class="card {{if .highlighted }} active-bg-primary {{end}} hover-shadow shadow">
-            <div class="card-body text-center px-4 py-5">
-              <i class="{{.icon }} icon mb-5 d-inline-block"></i>
-              <h4 class="mb-4">{{.title}}</h4>
-              <p>{{.content | markdownify}}</p>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
+  
   <!-- /services -->
   {{ end }}
   {{ end }}
 
 
   {{ if site.Data.homepage.portfolio.enable }}
-  <!-- portfolio -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{ site.Data.homepage.portfolio.title | markdownify }}</h2>
-        </div>
-      </div>
-      <div class="row shuffle-wrapper">
-        {{ $item:= site.Data.homepage.portfolio.item_show }}
-        {{ range first $item (where .Site.RegularPages "Section" "portfolio") }}
-        <div class="col-lg-4 col-6 mb-4 shuffle-item">
-          <div class="position-relative rounded hover-wrapper">
-            <img src="{{.Params.image | absURL }}" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
-            <div class="hover-overlay">
-              <div class="hover-content">
-                <a class="btn btn-light btn-sm" href="{{ .Permalink | safeURL }}">view project</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /portfolio -->
+ 
   {{ end }}
 
 
   {{ if site.Data.homepage.testimonial.enable }}
   {{ with site.Data.homepage.testimonial }}
-  <!-- testimonial -->
-  <section class="section bg-primary position-relative testimonial-bg-shapes">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title text-white mb-5">{{ .title | markdownify }}</h2>
-        </div>
-        <div class="col-lg-10 mx-auto testimonial-slider">
-          {{ range .item }}
-          <!-- slider-item -->
-          <div class="text-center testimonial-content">
-            <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-            <p class="text-white mb-4">{{.content | markdownify}}</p>
-            <img class="img-fluid rounded-circle mb-4 d-inline-block" src="{{.image | absURL }}" alt="client-image">
-            <h4 class="text-white">{{.name }}</h4>
-            <h6 class="text-light mb-4">{{ .designation }}</h6>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    <!-- bg shapes -->
-    <img src="{{`images/backgrounds/map.png` | relURL }}" alt="map" class="img-fluid bg-map">
-    <img src="{{`images/illustrations/dots-group-v.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{{`images/illustrations/leaf-orange.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{{`images/illustrations/dots-group-sm.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{{`images/illustrations/leaf-pink-round.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{{`images/illustrations/leaf-cyan.svg` | relURL }}" alt="bg-shape" class="img-fluid bg-shape-5">
-  </section>
+  
   <!-- /testimonial -->
   {{ end }}
   {{ end }}
@@ -585,21 +512,9 @@ padding-right:70px;
   {{ end }}
 
   {{ if site.Data.homepage.blog.enable }}
-  <!-- blog -->
-  <section class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="section-title">{{site.Data.homepage.blog.title | markdownify }}</h2>
-        </div>
-        {{ range first 3 (where .Site.RegularPages "Section" "blog")}}
-        {{ .Render "post" }}
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  <!-- /blog -->
+
   {{ end }}
+  
 
 
 {{ end }}
