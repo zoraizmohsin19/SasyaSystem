@@ -8,6 +8,7 @@
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
+  height: auto;
 }
 
 .hero-area{
@@ -18,7 +19,6 @@
     padding: 0px 130px;
     transition: .3s ease;
 }
-
 
 .firstimage{
  padding-top: 80px;
@@ -170,19 +170,29 @@
 
 .contentHeading
   {
-    color: #339910;
-    font-family: work sans,sans serif!important;
-    font-size: 40px;
-    font-weight: 500;
+    color: #206020;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+    font-size: 30px;
     text-transform: none;
     text-align: center;
     font-weight: bold;
     line-height: 1.4;
 }
+.contentsmallHeading
+  {
+    color: #206020;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+    font-size: 22px;
+    text-transform: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
 .contenttext
   {
     color:#000!important;;
-    font-family: work sans,sans,serif!important;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.4;
@@ -195,14 +205,14 @@
     color:#339910;
 }
 
-.left {
+.leftContent {
     float: left;
     width: 50%;
     padding-right:20px ;
 
 }
 
-.right {
+.rightContent {
     float: right;
     width: 50%;
 }
@@ -212,8 +222,8 @@
     clear: both;
 }
 img {
-    max-width: 100%;
-    height: auto;
+   max-width: 100%;
+   
 }
 @media screen and (max-width: 480px) {
     .left, 
@@ -248,10 +258,10 @@ img {
     padding:90px 0 0 104px;   
 }
 
-.financingText p{
+.financingText{
 line-height: 30px; 
 font-size: 17px;
-font-family: "Work Sans", sans-serif;
+font-family: "Eras ITC", "Eras Light ITC",  sans-serif;
 padding-right:70px;
 }
 .clearer {
@@ -278,14 +288,8 @@ padding-right:70px;
     justify-content: center;
     text-align: center;
 }
-.gr_title {
-    width: 292px;
-    text-align: center;
-    font: normal normal bold 28px Roboto Slab;
-    letter-spacing: 0px;
-    color: #212121;
-    opacity: 1;
-}
+
+
 </style>
 
   <!-- hero area -->
@@ -395,14 +399,14 @@ padding-right:70px;
         </div>
       </div>
       <div class="contenttext">
-        <div class="left">
+        <div class="leftContent">
                   <!--div class="financingTe"></div-->
-                      <p>There is a Low crop yield due to reliance on traditional methods of irrigation, fertigation and pest control. We connect Agriculture farms to help Farmers in automating and optimising their farming activities, reducing costs and increasing yield. </p>
-                      <p>We offer complete solution in automation Irrigation system, Bioflock Culture Management, Greenhouse Automation. Our products accompany you from the first idea to the serial product. Whether hardware or software, individual components, or complete solutions - we have an answer for every requirement.</p>
+                      There is a Low crop yield due to reliance on traditional methods of irrigation, fertigation and pest control. We connect Agriculture farms to help Farmers in automating and optimising their farming activities, reducing costs and increasing yield. 
+                      We offer complete solution in automation Irrigation system, Bioflock Culture Management, Greenhouse Automation. Our products accompany you from the first idea to the serial product. Whether hardware or software, individual components, or complete solutions - we have an answer for every requirement.
                     </div>
 
                 
-      <div class="right">
+      <div class="rightContent">
                     <div class="videoWrapper">
                         
                         <iframe width="560" height="600" src="https://storage.vidzai.com/VidzShareAudioVideoDocs/Sasya/SasyaSystems_WhatWeDo_v1.mp4" frameborder="0" allowfullscreen>                             </iframe>
@@ -420,14 +424,6 @@ padding-right:70px;
 
   
 
- 
-
-
-
-
-
-
-
   {{ if site.Data.homepage.skill.enable }}
   {{ with site.Data.homepage.skill }}
   <!-- skills -->
@@ -437,21 +433,21 @@ padding-right:70px;
       <div class="column">
         <img src="img/measure.svg" alt="Snow" width="100%" height="100%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
-          <h4 class="gr_title">Measure</h4>
+          <h4 class="contentsmallHeading">Measure</h4>
           <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Measure the weather forecast like temperature, Humidity, CO2, Luminescence etc. </p>
       </div>
       </div>
       <div class="column">
         <img src="img/control.svg" alt="Forest" width="100%" height="100%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
-          <h4 class="gr_title">Control</h4>
+          <h4 class="contentsmallHeading">Control</h4>
           <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Control the weather to achieve high yield</p>
       </div>
       </div>
       <div class="column">
         <img src="img/automation.svg" alt="Mountains" width="100%" height="100%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
-          <h4 class="gr_title">Automation</h4>
+          <h4 class="contentsmallHeading">Automation</h4>
           <p class="mb-0 w-75 text-center tab-content-text-width contenttext">Automate</p>
         </div>
       </div>
