@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://examplesite.com"
+baseURL = ""
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross-hugo"
@@ -30,17 +30,49 @@ link = "plugins/google-map/map.js"
 
 
 [[menu.main]]
-URL = "Product"  
+URL = "product"  
 name = "Product"
 weight = 1
 
+hasChildren = true
+
+ [[menu.main]]
+  parent = "Product"
+  name = "Sasya Smart Irrigation"
+  url = "sasyasmartirrigation"
+  weight = 1
+
+  [[menu.main]]
+  parent = "Product"
+  name = "Greenhouse Smart Climate Control"
+  url = "billing-pricing"
+  weight = 2
+
+  [[menu.main]]
+  parent = "Product"
+  name = "Sasya Smart Cold Storage"
+  url = "features"
+  weight = 3
+  
+  [[menu.main]]
+  parent = "Product"
+  name = "Bioflock Culture Management"
+  url = "#"
+  weight = 4
+  
+  [[menu.main]]
+  parent = "Product"
+  name = "Connected Scheduler"
+  url = "features"
+  weight = 5
+  
 [[menu.main]]
-URL = "Platform"
-name = "platform"
+URL = "platform"
+name = "Platform"
 weight = 2
 
 [[menu.main]]
-URL = "Gallery"  
+URL = "gallery"  
 name = "Gallery"
 weight = 3
 

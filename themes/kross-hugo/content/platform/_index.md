@@ -1,5 +1,5 @@
 ---
-title: "Product"
+title: "Platform"
 description: "This is meta description."
 author_image : "images/about/author.jpg"
 draft: false

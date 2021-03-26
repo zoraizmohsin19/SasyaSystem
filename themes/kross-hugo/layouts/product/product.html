@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{- partial "head.html" . -}}
+
+
+<head>
+<script>
+    window.onscroll = function() {
+      growShrinkLogo()
+    };
+    
+    function growShrinkLogo() {
+      var Logo = document.getElementById("Logo")
+      if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        Logo.style.width = '150px';
+        Logo.style.height = '37.5px';
+      } else {
+        Logo.style.width = '200px';
+        Logo.style.height = '50px';
+      }
+    }
+    </script>
+</head>
+<body>
+<section class="page-title-alt bg-primary position-relative overflow-hidden">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-white font-tertiary">{{ .Title }}</h1>
+        </div>
+      </div>
+    </div>
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+
+      {{- partial "footer.html" . -}}
+    </body>
