@@ -14,3 +14,49 @@ VERSION: Versoin Number
     padding: 0px 130px;
     transition: .3s ease;
 }
+.contentsmallHeading
+{
+  color: #206020;
+  font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+  font-size: 22px;
+  text-transform: none;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.contenttext
+{
+  color:#000!important;;
+  font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-transform: none;
+  text-align: left;
+}
+
+::selection {
+  background: #339910;;
+  color:#339910;
+}
+.contentHeading
+  {
+    color: #206020;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+    font-size: 30px;
+    text-transform: none;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+}
+.leftContent {
+    float: left;
+    width: 50%;
+    padding-right:20px ;
+
+}
+.rightContent {
+    float: right;
+    width: 50%;
+}
