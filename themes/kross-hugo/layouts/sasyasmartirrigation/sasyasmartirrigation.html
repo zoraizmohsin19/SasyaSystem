@@ -31,6 +31,24 @@
 .Features {
   margin-left:40px;
 }
+.abutton {
+  border-radius: 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .card-img-top {
+    width: 50%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
 </style>
 
 <head>
@@ -71,22 +89,27 @@
                      <div> No over or under irrigation.</div>
                      <div>Save water & prevent fertilizer leaching.</div> 
                       <div>Irrigate as per soil & crop need.</div>
+                      <br/>
+                      <a href="/images/brochure/Irrigation.pdf">
+                      <button type="button" class="btn btn-success abutton">Link to Brochure</button></a>
+                      
                     </div>
+                    
                 
       <div class="rightContent">
                     <div class="videoWrapper">
                         
                          <img src="/img/smartIrrigationflow.png" alt="Snow" width="100%" height="100%">
                     </div>
-                </div>
+                              </div>
 
   <div class="clearer"></div>
 
 </div>
-      
-    </div>
+</div>
+ 
   </section>
-    <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/><br/>  <br/>  <br/> 
+    <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/><br/>  <br/>  <br/> <br/><br/>  <br/>  <br/> 
   <section>
   <div class="contenttext">
     <ul class="Features">
@@ -121,15 +144,59 @@
   </table>
   </section>
 
-  <section>
-    <div class="contenttext">
-      <h3 class="contentHeading"> Smart Irrigation Product</h3>
-      <img src="/img/xy.png">
-      <img src="/img/ABC.png">
-      <img src="/img/gateway.png">
-      <img src="/img/power.png">
+</br>
+</br>
+</br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="contentHeading">Smart Irrigation Product</h2>
+      </div>
+      
+      <div class="col-md-3 col-sm-4 mb-3 mb-md-0">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title contenttext">Soil pF Sensors</h4>
+          </div>
+          <img src="/img/xy.png" class="card-img-top">
+          
+          </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-4 mb-3 mb-md-0">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title contenttext">Sensor Node</h4>
+          </div>
+          <img src="/img/ABC.png" class="card-img-top">
+          
+          </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-4 mb-3 mb-md-0">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title contenttext">Gateway Controller</h4>
+          </div>
+          <img src="/img/gateway.png" class="card-img-top">
+          
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-4 mb-3 mb-md-0">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title contenttext">Power Supply</h4>
+          </div>
+          <img src="/img/power.png" class="card-img-top">
+          
+         
+          </div>
+      </div>
+      
     </div>
-  </section>
+  </div>
+ 
 
       {{- partial "footer.html" . -}}
     </body>
