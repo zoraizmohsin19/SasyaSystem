@@ -51,24 +51,24 @@ hasChildren = true
   [[menu.main]]
   parent = "Product"
   name = "Sasya Smart Cold Storage"
-  url = "features"
+  url = "sasyacoldstorage"
   weight = 3
   
   [[menu.main]]
   parent = "Product"
   name = "Biofloc Culture Management"
-  url = "#"
+  url = "bioflocautomation"
   weight = 4
   
   [[menu.main]]
   parent = "Product"
   name = "Connected Scheduler"
-  url = "features"
+  url = "connectedschduler"
   weight = 5
   
 [[menu.main]]
 URL = "platform"
-name = "Platform"
+name = "platform"
 weight = 2
 
 [[menu.main]]
