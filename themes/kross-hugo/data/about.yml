@@ -21,18 +21,19 @@ team:
   enable: true
   title : "My Team"
   team_member:
-    - title : "Jack Schenziwe"
+    - title : "Santosh Jha"
       image : "images/team/member-1.png"
-      designation : "Project Manager"
+      designation : "Founder & CEO, Product Design & Development"
+      summary : "An Alumnus from REC Bhopal, with over two decades of experience in designing and development of embedded systems for defence, automotive an other industries"
       
-    - title : "Julias Carlie"
+    - title : "Bhavesh Thakur"
       image : "images/team/member-2.png"
-      designation : "Web Developer"
-      
-    - title : "John Doe"
+      designation : "Operations, Finance & Product Strategy"
+      summary : "27+ yrs, IT industry developing products, platforms Ex-Infosys, Capgemini National Institute of Technology, Surathkal, 1992"
+    - title : "Rajesh Goyal"
       image : "images/team/member-3.png"
-      designation : "Designer"
-
+      designation : "Business Development – Sales & Marketing"
+      summary : "20+ yrs in IT industry in Large account management, Pre-sales,  Strategic alliances National Institute of Technology, Bhopal, 1993"
 
 # client logo slider
 clients_logo_slider:

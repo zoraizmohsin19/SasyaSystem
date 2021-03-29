@@ -1,44 +1,48 @@
 {{ define "main" }}
 
-
-<!-- page title -->
-<section class="page-title-alt bg-primary position-relative overflow-hidden">
+<section class="section">
+  
+ 
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ .Title }}</h1>
-      </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="{{`images/illustrations/page-title.png`| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="{{`images/illustrations/dots-group-sm.svg`| relURL}}" alt="illustrations" class="bg-shape-2">
-  <img src="{{`images/illustrations/leaf-yellow.svg`| relURL}}" alt="illustrations" class="bg-shape-3">
-  <img src="{{`images/illustrations/leaf-orange.svg`| relURL}}" alt="illustrations" class="bg-shape-4">
-  <img src="{{`images/illustrations/dots-group-cyan.svg`| relURL}}" alt="illustrations" class="bg-shape-5">
-  <img src="{{`images/illustrations/leaf-cyan-lg.svg`| relURL}}" alt="illustrations" class="bg-shape-6">
-</section>
-<!-- /page title -->
+      <div class="col-lg-10 mx-auto text-center">
+        {{ with site.Data.homepage.about }}
 
-<!-- about -->
-<section class="section pt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        {{ .Content }}
-      </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          <img src="{{.Params.author_image | absURL }}" alt="author"
-            class="img-fluid w-100 rounded-lg border-thick border-white">
-        </div>
-        <img src="{{.Params.author_signature | absURL }}" alt="signature" class="img-fluid">
-        <h4>{{ site.Params.Author }}</h4>
+        <h2 class="contentHeading">About Us</h2>
+        <p class="contenttext">{{.content | markdownify}}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+        {{ end }}
+        {{ end }}
+        {{ end }}
       </div>
     </div>
+ 
+ 
+    <div class="contenttext">
+     
+                We are a technology driven Agriculture company with a focus on empowering farmers with our innovative smart irrigation systems and precision farming methods for sustainable agriculture.
+
+Our solution is aimed at increasing the productivity with reduced input costs and man-hours and help towards conservation of our natural resources such as land, water and energy. We are also committed towards driving mass adoption of precision farming methods as small difference in variability can lead to significant difference in the yield. It helps farmers to maximize productivity with the limited resources available and enables efficient decision making to make sustainable choices.
+                
+                
+                
+              </div>
+              <div class="container" style=" text-align: center">
+    
+                <img src="/img/about.png" alt="Snow" width="50%" height="50%">
+                
+              </div>
+<br/>
+              
+
+
+<div class="clearer"></div>
+
+    
   </div>
 </section>
-<!-- /about -->
 
 <!-- Work Process -->
 {{ if site.Data.about.work_process.enable }}
@@ -77,10 +81,11 @@
         <div class="card text-center">
           <img src="{{ .image | absURL }}" class="card-img-top">
           <div class="card-body">
-            <h4 class="card-title">{{.title }}</h4>
-            <p class="text-light font-secondary">{{.designation }}</p>
+            <h4 class="card-title contentHeading">{{.title }}</h4>
+            <p class="text-light font-secondary contenttext"><b>{{.designation }}</b></p>
+            <p class="text-light font-secondary contenttext">{{.summary }}</p>
           </div>
-        </div>
+          </div>
       </div>
       {{ end }}
     </div>

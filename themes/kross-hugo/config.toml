@@ -68,7 +68,7 @@ hasChildren = true
   
 [[menu.main]]
 URL = "platform"
-name = "platform"
+name = "Platform"
 weight = 2
 
 [[menu.main]]
