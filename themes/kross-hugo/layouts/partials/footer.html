@@ -12,7 +12,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="contentsubHeading mb-80">Contact Form</h4>
-          <form action="{{site.Params.contact.form_action}}" method="POST" class="row" onload="createCaptcha()" onsubmit="validateCaptcha()">
+          <form action="{{site.Params.contact.form_action}}" method="POST" class="row" onsubmit="validateCaptcha()">
             <div class="contenttext col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
             </div>
@@ -121,8 +121,7 @@
 			};
 		}
 	})(jQuery);
-</script>
-<script>
+
 var code;
 function createCaptcha() {
   //clear the contents of captcha div first 
