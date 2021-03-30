@@ -50,6 +50,13 @@ VERSION: Versoin Number
     font-weight: bold;
     line-height: 1.4;
 }
+
+.contentsubHeading
+  {
+    color: #206020;
+    font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+    font-size: 24px;
+}
 .leftContent {
     float: left;
     width: 50%;
@@ -59,4 +66,8 @@ VERSION: Versoin Number
 .rightContent {
     float: right;
     width: 50%;
+}
+
+.leftalign {
+    text-align: left;
 }

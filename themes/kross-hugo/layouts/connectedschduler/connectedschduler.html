@@ -17,6 +17,11 @@
     font-weight: bold;
     line-height: 1.4;
 }
+
+.centeralign
+  {
+    text-align: center;
+}
 .leftContent {
     float: left;
     width: 50%;
@@ -27,6 +32,24 @@
 .rightContent {
     float: right;
     width: 50%;
+}
+.abutton {
+  border-radius: 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .card-img-top {
+    width: 50%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 </style>
 
@@ -40,6 +63,12 @@
 
  <section class="section">
   
+  <div class="container centeralign" >
+      
+    <img src="/img/samayadevice.jpg" alt="Snow" width="80%" height="80%">
+    
+  </div>
+</br>
  
     <div class="container">
       <div class="row">
@@ -60,6 +89,11 @@
         <div class="leftContent">
                   <!--div class="financingTe"></div-->
                   Sasya introduces connected scheduler – Samaya for complex scheduling requirements of devices (pumps, venturi, valves) for farms & Greenhouses. Samaya schedulers can be configured easily by experts remotely. Multiple devices can be scheduled in a given order and can be activated and tracked on Sasya IoT platform.
+                  <br/>
+                  <a href="/images/brochure/samaya.pdf">
+                  <button type="button" class="btn btn-success abutton">Link to Brochure</button></a>
+                  
+                </div>
                 </div>
 
                 
@@ -76,8 +110,67 @@
       
     </div>
   </section>
-    <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/><br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>
+    <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/><br/>  
   
+    <section>
+      <div class="contenttext">
+        <ul class="Features">
+        <h3 class="contentHeading"> Product Features</h3>
+      <table>
+        <table>
+          <tr>
+        <td><img src="/img/s1.png"></td>
+          <td> Total 100 schedules can be set for a day. Basic Model 12 channel can be extended to  24 Channels (Relays) for Devices.</td> 
+        </tr>
+          <tr>
+        <td><img src="/img/s2.png"></td>
+          <td> Each Channel can be programmed independently, and has Manual ON/OFF.</td> 
+        </tr>
+        <tr>
+        <td><img src="/img/s3.png"></td>
+          <td> Incase of power failure remaining program will run when power resumes.</td> 
+        </tr>
+        <tr>
+        <td><img src="/img/s4.png"></td>
+          <td> Wifi connected , can be programmed , monitored  and troubleshoot remotely. Programmed with Mobile or Computer.</td> 
+        </tr>
+        </ul>
+      </table>
+      </section>
+    
+    </br>
+    </br>
+    </br>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="contentHeading">Connected Scheduler Product</h2>
+          </div>
+          
+          <div class="centeralign col-md-6 col-sm-6 mb-6 mb-md-0 ">
+            <div class="card text-center">
+              <div class="card-body">
+                <h4 class="card-title contenttext">Samaya Pump</h4>
+              </div>
+              <img src="/img/samayapump.png" class="card-img-top" text-align="left">
+              
+              </div>
+          </div>
+          
+          <div class="centeralign col-md-6 col-sm-6 mb-6 mb-md-0">
+            <div class="card text-center">
+              <div class="card-body">
+                <h4 class="card-title contenttext">Samaya Pump</h4>
+              </div>
+              <img src="/img/samayacircuit.jpg" class="card-img-top">
+              
+              </div>
+          </div>
+          
+          
+        </div>
+      </div>
 <!--<div class="contenttext">-->
       {{- partial "footer.html" . -}}
     </body>
