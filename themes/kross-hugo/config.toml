@@ -129,7 +129,7 @@ preloader = "images/preloader.gif" # use png, jpg, svg or gif format
 # contact
 [params.contact]
 enable = true
-form_action = "#" # contact form works with : https://formspree.io
+form_action = "http://127.0.0.1:3000/process_post"
 
 # google map
 [params.map]
