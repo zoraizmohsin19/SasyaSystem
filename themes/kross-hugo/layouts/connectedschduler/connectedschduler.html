@@ -51,6 +51,9 @@
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
 }
+.card {
+  align-items: center;
+}
 </style>
 
 <head>
@@ -60,14 +63,17 @@
   {{- partial "header.html" . -}}
   
   <br/>
+  
 
  <section class="section">
-  
-  <div class="container centeralign" >
+  <div class="container">
       
-    <img src="/img/samayadevice.jpg" alt="Snow" width="80%" height="80%">
+    <img src="/images\PrductWebImg\Conneted Scheduler.jpg" alt="Snow" width="100%" height="100%">
     
   </div>
+
+<br/>
+  
 </br>
  
     <div class="container">
@@ -75,7 +81,7 @@
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
 
-          <h2 class="contentHeading">Connected Scheduler</h2>
+          <h2 class="contentHeading">Samaya Smart Scheduler</h2>
           <p class="contenttext">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -88,9 +94,9 @@
       <div class="contenttext">
         <div class="leftContent">
                   <!--div class="financingTe"></div-->
-                  Sasya introduces connected scheduler – Samaya for complex scheduling requirements of devices (pumps, venturi, valves) for farms & Greenhouses. Samaya schedulers can be configured easily by experts remotely. Multiple devices can be scheduled in a given order and can be activated and tracked on Sasya IoT platform.
+                  Sasya introduces Samaya Smart Scheduler – Samaya for complex scheduling requirements of devices (pumps, venturi, valves) for farms & Greenhouses. Samaya schedulers can be configured easily by experts remotely. Multiple devices can be scheduled in a given order and can be activated and tracked on Sasya IoT platform.
                   <br/>
-                  <a href="/images/brochure/samaya.pdf">
+                  <a href="/images/brochure/Brochure_Sasya_ConnectedScheduler_vCl.pdf">
                   <button type="button" class="btn btn-success abutton">Link to Brochure</button></a>
                   
                 </div>

@@ -62,7 +62,7 @@ hasChildren = true
   
   [[menu.main]]
   parent = "Product"
-  name = "Connected Scheduler"
+  name = "Samaya Smart Scheduler"
   url = "connectedschduler"
   weight = 5
   
