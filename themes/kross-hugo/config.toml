@@ -82,10 +82,7 @@ URL = "about"
 name = "About Us"
 weight = 4
 
-[[menu.main]]
-URL = "contact"
-name = "Contact"
-weight = 5
+
 
 
 # default parameters
@@ -113,11 +110,7 @@ icon = "ti-instagram"
 URL = "#"
 
 [[params.social]]
-icon = "ti-dribbble"
-URL = "#"
-
-[[params.social]]
-icon = "ti-twitter-alt"
+icon = "ti-youtube"
 URL = "#"
 
 
@@ -154,5 +147,6 @@ icon = "ti-instagram"
 URL = "#"
 
 [[params.social]]
-icon = "ti-twitter-alt"
+icon = "ti-youtube"
 URL = "#"
+
