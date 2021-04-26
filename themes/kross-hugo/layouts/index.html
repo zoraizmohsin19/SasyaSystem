@@ -505,12 +505,24 @@ padding-right:70px;
   {{ end }}
   {{ end }}
 
+  
+  <h2 class="contentHeading">Our customers who speak for us</h2>
 
   {{ if site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->
   <section class="section pb-0">
     <div class="container">
       {{ partial "client-slider.html" . }}
+    </div>
+  </section>
+  <!-- /client logo slider -->
+  {{ end }}
+
+  {{ if site.Data.homepage.clients_logo_slider1.enable }}
+  <!-- client logo slider -->
+  <section class="section pb-0">
+    <div class="container">
+      {{ partial "client-slider1.html" . }}
     </div>
   </section>
   <!-- /client logo slider -->

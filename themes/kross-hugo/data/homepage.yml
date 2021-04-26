@@ -121,19 +121,53 @@ clients_logo_slider:
       URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-1.png"
-      URL : "#"
+      URL : "http://examplesite.com"
       
     - logo : "images/clients-logo/client-logo-2.png"
-      URL : "http://examplesite.com"
+      URL : "#"
       
     - logo : "images/clients-logo/client-logo-3.png"
-      URL : "#"
-      
-    - logo : "images/clients-logo/client-logo-4.png"
       URL : "http://examplesite.com"
       
-    - logo : "images/clients-logo/client-logo-5.png"
+    - logo : "images/clients-logo/client-logo-4.png"
       URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-5.png"
+      URL : "http://examplesite.com"
+
+# client logo slider
+clients_logo_slider1:
+  enable : true
+  item:
+    - logo : "images/clients-logo/client-logo-11.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-22.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-33.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-44.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-55.png"
+      URL : "http://examplesite.com"
+
+    - logo : "images/clients-logo/client-logo-11.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-22.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-33.png"
+      URL : "http://examplesite.com"
+      
+    - logo : "images/clients-logo/client-logo-44.png"
+      URL : "#"
+      
+    - logo : "images/clients-logo/client-logo-55.png"
+      URL : "http://examplesite.com"
 
 # blog
 blog:
