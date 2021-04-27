@@ -82,7 +82,15 @@ URL = "about"
 name = "About Us"
 weight = 4
 
+[[menu.main]]
+URL = "request"
+name = "Request A Demo"
+weight = 5
 
+[[menu.main]]
+URL = "https://app.sasyasystems.com/#/"
+name = "Login"
+weight = 6
 
 
 # default parameters

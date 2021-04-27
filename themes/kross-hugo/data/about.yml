@@ -19,7 +19,7 @@ work_process:
 # team
 team:
   enable: true
-  title : "My Team"
+  title : "Sasya Core Team and Advisors"
   team_member:
     - title : "Santosh Jha"
       image : "images/team/member-1.png"

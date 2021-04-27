@@ -1,4 +1,6 @@
+
 {{ define "main" }}
+<link rel="stylesheet" href="plugins/bootstrap/style.min.css">
 
 <section class="section">
   
@@ -20,20 +22,31 @@
     </div>
  
  
-    <div class="contenttext">
-     
-                We are a technology driven Agriculture company with a focus on empowering farmers with our innovative smart irrigation systems and precision farming methods for sustainable agriculture.
-
-Our solution is aimed at increasing the productivity with reduced input costs and man-hours and help towards conservation of our natural resources such as land, water and energy. We are also committed towards driving mass adoption of precision farming methods as small difference in variability can lead to significant difference in the yield. It helps farmers to maximize productivity with the limited resources available and enables efficient decision making to make sustainable choices.
-                
-                
-                
-              </div>
-              <div class="container" style=" text-align: center">
     
-                <img src="/img/about.png" alt="Snow" width="50%" height="50%">
+     
+    <div class="contentsmallHeading"> <b> Sasya</b> means ‘Blue/Green’ or ‘Rain/Grain’ </br></div>
+    <div class="contenttext">Sasya is a IOT technology company with focus on creating agriculture automation products for farmers and commercial growers
+      </div>
+
+    </br>
+  </br>
+      <div class="contentsmallHeading"> <b>  Vision & Mission Statement </br></div>
+        <div class="contenttext">We enable agriculture farms and greenhouses, helping farmers in automating and optimizing their farming activities, reducing costs and increasing yield
+        </div>
+    
+      </br>
+        <div class="contentsmallHeading"> <b>  Our play </br></div>
+          <div class="contenttext">We provides IoT based Smart irrigation, Climate Control and Biofloc Culture Management products for agricultural fields,  Green-houses and in-situ fisheries using Biofloc. We bring together sensors, communication gateways and the cloud technology along with Agri-knowledge for precision farming. 
+
+          </div>
+
+        </br>
+        <div class="contentsmallHeading"> <b> Our Team </br></div>
+          <div class="contenttext">A group of technocrats with decades of experience in hardware design and fabrication, software system architecture, plant genetics, fertilizer and precision agriculture and above all passion for agriculture
+
+          </div>
                 
-              </div>
+
 <br/>
               
 
@@ -74,7 +87,8 @@ Our solution is aimed at increasing the productivity with reduced input costs an
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h1 class="contentHeading">{{ .title | markdownify }}</h1>
+      </br>
       </div>
       {{ range .team_member }}
       <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
@@ -102,7 +116,7 @@ Our solution is aimed at increasing the productivity with reduced input costs an
       <div class="col-12 text-center">
         <h2 class="section-title">{{ site.Data.about.clients_logo_slider.title | markdownify }}</h2>
       </div>
-    </div>
+  </div>
     {{ partial "client-slider.html" . }}
   </div>
 </section>
