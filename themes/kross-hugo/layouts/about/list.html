@@ -1,6 +1,28 @@
 
 {{ define "main" }}
 <link rel="stylesheet" href="plugins/bootstrap/style.min.css">
+<style>
+  table, td, th {  
+
+  text-align:center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+.Features{
+  background-image: url('/images/backgrounds/bg-dots.png');
+}
+.alignleft{
+  text-align: left;
+}
+
+</style>
 
 <section class="section">
   
@@ -24,24 +46,24 @@
  
     
      
-    <div class="contentsmallHeading"> <b> Sasya</b> means ‘Blue/Green’ or ‘Rain/Grain’ </br></div>
+    <div class="contentsmallHeading alignleft"> <b> Sasya</b> means ‘Blue/Green’ or ‘Rain/Grain’ </br></div>
     <div class="contenttext">Sasya is a IOT technology company with focus on creating agriculture automation products for farmers and commercial growers
       </div>
 
     </br>
   </br>
-      <div class="contentsmallHeading"> <b>  Vision & Mission Statement </br></div>
+      <div class="contentsmallHeading alignleft"> <b>  Vision & Mission Statement </br></div>
         <div class="contenttext">We enable agriculture farms and greenhouses, helping farmers in automating and optimizing their farming activities, reducing costs and increasing yield
         </div>
     
       </br>
-        <div class="contentsmallHeading"> <b>  Our play </br></div>
+        <div class="contentsmallHeading alignleft"> <b>  Our play </br></div>
           <div class="contenttext">We provides IoT based Smart irrigation, Climate Control and Biofloc Culture Management products for agricultural fields,  Green-houses and in-situ fisheries using Biofloc. We bring together sensors, communication gateways and the cloud technology along with Agri-knowledge for precision farming. 
 
           </div>
 
         </br>
-        <div class="contentsmallHeading"> <b> Our Team </br></div>
+        <div class="contentsmallHeading alignleft"> <b> Our Team </br></div>
           <div class="contenttext">A group of technocrats with decades of experience in hardware design and fabrication, software system architecture, plant genetics, fertilizer and precision agriculture and above all passion for agriculture
 
           </div>
@@ -83,43 +105,36 @@
 <!-- team -->
 {{ if site.Data.about.team.enable }}
 {{ with site.Data.about.team }}
-<section class="section bg-cover" data-background="{{`images/backgrounds/team-bg.png`|relURL}}">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="contentHeading">{{ .title | markdownify }}</h1>
-      </br>
-      </div>
-      {{ range .team_member }}
-      <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
-        <div class="card text-center">
-          <img src="{{ .image | absURL }}" class="card-img-top">
-          <div class="card-body">
-            <h4 class="card-title contentHeading">{{.title }}</h4>
-            <p class="text-light font-secondary contenttext"><b>{{.designation }}</b></p>
-            <p class="text-light font-secondary contenttext">{{.summary }}</p>
-          </div>
-          </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
+
+<h2 class="contentHeading">Sasya Core Team and Advisors</h2>
+<table class="Features">
+  <tr class="contentsmallHeading">
+    <th>Core Member</th>
+    <th></th>
+    <th>Advisory</th>
+  </tr>
+  <tr>
+    <td><img src="\images\team\Smember1.png"></td>
+    <td style="text-align: left;"><img src="\images\team\cmember1.png"> </td>
+    <td><img src="\images\team\Amember1.png"></td>
+  </tr>
+  <tr>
+    <td><img src="\images\team\Smember2.png"></td>
+    <td style="text-align: left;"><img src="\images\team\cmember2.png"></td>
+    <td><img src="\images\team\Amember2.png"></td>
+  </tr>
+  <tr>
+    <td><img src="\images\team\Smember3.png"></td>
+    <td style="text-align: left;"><img src="\images\team\cmember3.png"></td>
+    <td><img src="\images\team\Amember3.png"></td>
+  </tr>
+  
+</table>
+
 {{ end }}
 {{ end }}
 <!-- /team -->
 
-{{ if site.Data.about.clients_logo_slider.enable }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ site.Data.about.clients_logo_slider.title | markdownify }}</h2>
-      </div>
-  </div>
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
-{{ end }}
+
 
 {{ end }}
