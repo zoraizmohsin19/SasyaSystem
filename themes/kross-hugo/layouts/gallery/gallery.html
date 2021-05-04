@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="plugins/bootstrap/style.min.css">
+<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+{{- partial "head.html" . -}}
+
+
+<head>
+    <style>
+#rig {
+    max-width:1000px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#FFFFFF;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:10px;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+/*
+.row{
+ padding-left: 100px;
+ padding-right: 100px;
+}
+
+.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) *//*
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: -moz-hidden-unscrollable;
+  background-color:#FFFFFF;
+}
+
+/* Modal Content *//*
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  height: 60%;
+}
+
+/* The Close Button *//*
+.close {
+ padding-top: 100px;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons *//*
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right *//*
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*
+/* On hover, add a black background color with a little bit see-through *//*
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+*/
+/* Number text (1/3 etc) */
+/*
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+    </style>
+
+</head>
+<body>
+  {{- partial "header.html" . -}}
+</br></br></br></br></br>
+
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/manjeet.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Proud moment after one year of installation of TH monitor at Manjeet Bhai Farm in Rajnandgaon</span>
+        
+        </a>
+    </li>
+
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/desai.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Desai Green House, Hyderabad</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/cuberoot.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Cuberoot GreenHouse,Bangalore</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/lalbag1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Lalbagh, Bangalore</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/lalbag2.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Lalbagh, Bangalore</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/yogesh.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">After installation of Mobile Pump Controller (Sahaj 100) at Rajnandgaon in Yogesh Patel Farm. He is our First customer for this Product.</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/chawda.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">12 Channel Wireless pump controller installed at Chawda bagh , Raipur</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/soilbedmansbanglore.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Mr.Mans visit to Soil Bed, Bangalore</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/hoschgurubanglore.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Hoshachguru Green House, bangalore</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/Pomo Open field Soil moisture monitoring.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Pomo Open field Soil Moisture Monitoring</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/biofloc measurement.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Biofloc Measurement</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/Biofloc monitoring system - discussion.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Biofloc monitoring system</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/Bharath Farm.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Smart Irrigation System in Bharath Farm</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/divider Before planting.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Highway Divider Irrigation System</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/fishchainbanglore.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Fish Chain, Bangalore</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="/images/gallery/jagriticoldstorage.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Jagriti Smart Cold Storage </span>
+        </a>
+    </li>
+</ul>
+
+
+<!--
+<h2 style="text-align:center">Gallery</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/images/gallery/manjeet.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor rig-img hover-shadow cursor">
+    <span class="rig-overlay"></span>
+    <span class="rig-text">Proud moment after one year of installation of TH monitor at Manjeet Bhai Farm in Rajnandgaon</span>
+  </div>
+  <div class="column">
+    <img src="/images/gallery/desai.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/images/gallery/cuberoot.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/images/gallery/lalbag1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="/images/gallery/manjeet.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="/images/gallery/desai.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="/images/gallery/cuberoot.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="/images/gallery/lalbag1.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+   
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>-->
+
+ </body>
+        
+</html>
