@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="plugins/bootstrap/col.bootstrap.min.css">
 <script src="plugins/bootstrap/col.jquery.min.js"></script>
 <script src="plugins/bootstrap/col.bootstrap.min.js"></script>
-<link rel="stylesheet" href="plugins/bootstrap/style.min.css">
+<link rel="stylesheet" href="plugins/bootstrap/style.min.css"> 
 <script src="plugins/bootstrap/lottie-player.js"></script>
 <style>
 .carousel-inner > .item > img,
@@ -11,6 +11,7 @@
   width: 100%;
   height: auto;
 }
+
 
 .hero-area{
     padding: 80px 0 20px;
@@ -129,8 +130,6 @@
   75%  {left: 0px; top: 0px;}
   100% {left: 0px; top: 0px;}
 
-  
-
 }
 
 .leader{
@@ -140,6 +139,11 @@
  position: absolute;
  animation: leader1 5s;
  animation-iteration-count: 10;
+}
+
+.leaderImage{
+  width: 80%;
+  height: 80%;
 }
 
 
@@ -161,6 +165,26 @@
  animation-timing-function: ease-in;
 }
 
+.firstImage{
+  width:330px;
+  height:220;
+}
+
+.secoundImage{
+  width:300px;
+  height:150px;
+}
+
+.peopleImage{
+  width: 150px;
+  height: 300px;
+}
+
+.fishImage{
+  width: 300px;
+  height: 350px;
+}
+
 @keyframes people3 {
  0%   {left: 0px; top: -150px;}
  25%  {left: 0px; top: 0px;}
@@ -170,19 +194,229 @@
 }
 
 
-
-
-.leftContent {
-    float: left;
-    width: 50%;
-    padding-right:20px ;
-
+@media(max-width: 768px){
+.firstimage{
+ padding-top: 35px;
+ padding-left: 220px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 5;
 }
 
-.rightContent {
-    float: right;
-    width: 50%;
+.secondimage{
+ padding-top: 15px;
+ padding-left: 400px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
 }
+
+.firstImage{
+  width:220px;
+  height:150px;
+}
+
+.secoundImage{
+  width:260px;
+  height:120px;
+}
+
+.leader{
+ padding-top: 200px;
+ padding-left: 50px;
+ text-align: center;
+ position: absolute;
+ animation: leader1 5s;
+ animation-iteration-count: 10;
+}
+
+.people{
+ padding-top: 85px;
+ padding-left: 45px;
+ text-align: center;
+ position: absolute;
+ animation: people3 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
+}
+
+.peopleImage{
+  width: 100px;
+  height: 150px;
+}
+.Greenhouse{
+  width:300px;
+  height:245px;
+}
+
+.fishimage{
+  padding-top: 60px;
+  padding-left: 320px;
+  text-align: center;
+  position: absolute;
+  animation-name: fish;
+  animation: example 5s;
+  animation-iteration-count: 10;
+}
+
+.fishImage{
+  width: 170px;
+  height: 240px;
+}
+}
+
+
+@media(max-width: 600px){
+.firstimage{
+ padding-top: 30px;
+ padding-left: 100px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 5;
+}
+
+.secondimage{
+ padding-top: 12px;
+ padding-left: 200px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
+}
+
+.firstImage{
+  width:110px;
+  height:75px;
+}
+
+.secoundImage{
+  width:130px;
+  height:60px;
+}
+
+.leader{
+ padding-top: 100px;
+ padding-left: 50px;
+ text-align: center;
+ position: absolute;
+ animation: leader1 5s;
+ animation-iteration-count: 10;
+}
+
+.people{
+ padding-top: 25px;
+ padding-left: 25px;
+ text-align: center;
+ position: absolute;
+ animation: people3 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
+}
+
+.peopleImage{
+  width: 50px;
+  height: 100px;
+}
+.Greenhouse{
+  width:300px;
+  height:245px;
+}
+
+.fishimage{
+  padding-top: 30px;
+  padding-left: 160px;
+  text-align: center;
+  position: absolute;
+  animation-name: fish;
+  animation: example 5s;
+  animation-iteration-count: 10;
+}
+
+.fishImage{
+  width: 85px;
+  height: 120px;
+}
+}
+
+@media(max-width: 320px){
+.firstimage{
+ padding-top: 30px;
+ padding-left: 105px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 5;
+}
+
+.secondimage{
+ padding-top: 28px;
+ padding-left: 170px;
+ text-align: center;
+ position: absolute;
+ animation: example 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
+}
+
+.firstImage{
+  width:65px;
+  height:40px;
+}
+
+.secoundImage{
+  width:80px;
+  height:25px;
+}
+
+.leader{
+ padding-top: 100px;
+ padding-left: 50px;
+ text-align: center;
+ position: absolute;
+ animation: leader1 5s;
+ animation-iteration-count: 10;
+}
+
+.people{
+ padding-top: 25px;
+ padding-left: 25px;
+ text-align: center;
+ position: absolute;
+ animation: people3 5s;
+ animation-iteration-count: 10;
+ animation-timing-function: ease-in;
+}
+
+.peopleImage{
+  width: 50px;
+  height: 100px;
+}
+.Greenhouse{
+  width:150px;
+  height:123px;
+}
+
+.fishimage{
+  padding-top: 30px;
+  padding-left: 160px;
+  text-align: center;
+  position: absolute;
+  animation-name: fish;
+  animation: example 5s;
+  animation-iteration-count: 10;
+}
+
+.fishImage{
+  width: 85px;
+  height: 120px;
+}
+}
+
 .group:after {
     content:"";
     display: table;
@@ -244,9 +478,13 @@ padding-right:70px;
 }
 
 .image-container {
-  display: flex;
+  display: block;
   justify-content: center;
+  float: center;
+  padding: 20px;
+  text-align: center;
 }
+
 .txtalign {
     display: block;
     margin-block-start: 1.33em;
@@ -268,6 +506,10 @@ padding-right:70px;
   line-height: 1.4;
   text-transform: none;
   text-align: center;
+}
+.alignsas{
+  text-align: justify;
+  text-justify: inter-word;
 }
 </style>
 
@@ -300,12 +542,12 @@ padding-right:70px;
 
                  <div class="firstimage">
               <div class="firstshake">
-                <img src="img/carousel/Irri12.png"  width="330" height="220">
+                <img src="img/carousel/Irri12.png"  class="firstImage">
               </div>
             </div>
             <div class="secondimage">
               <div class="secoundshake">
-              <img src="img/carousel/Tech.png"  width="300" height="150">
+              <img src="img/carousel/Tech.png"  class="secoundImage">
             </div>
             </div>
             <div class="carousel-caption">
@@ -317,7 +559,7 @@ padding-right:70px;
 
             <img src="img/carousel/pic4.png" alt="Chania" width="460" height="345">
             <div class="fishimage">
-              <img src="img/carousel/pic1.png"  width="300" height="350">
+              <img src="img/carousel/pic1.png"  class="fishImage">
             </div>
               <div class="carousel-caption">
               </div>
@@ -325,13 +567,13 @@ padding-right:70px;
         
 
           <div class="item">
-            <img src="img/carousel/Green House .png" alt="Flower" width="300" height="245">
+            <img src="img/carousel/Green House .png" alt="Flower"  class="Greenhouse">
             <div class="leader">
-                <img src="img/carousel/Three male workers.png"  width="80%" height="80%">
+                <img src="img/carousel/Three male workers.png" class="leaderImage">
               </div>
             
             <div class="people">
-              <img src="img/carousel/man with solar pannel.png"  width="150" height="300">
+              <img src="img/carousel/man with solar pannel.png" class="peopleImage">
             </div>
             <div class="carousel-caption">
              
@@ -377,9 +619,12 @@ padding-right:70px;
           {{ end }}
         </div>
       </div>
-      <div class="col-lg-6 col-sm-12 mb-12">
+
+     
+      <div>
+        
       <div class="contenttext">
-        <div class="leftContent">
+        <div class="col-lg-6 col-md-12 col-sm-12 alignsas">
                   <!--div class="financingTe"></div-->
                   Sasya helps farmers
         </br>Move from traditional agriculture to<b> precision agriculture</b> </br>
@@ -390,17 +635,18 @@ padding-right:70px;
 
 
 
-
+     
                     </div>
                   </div>
       </div>
-      <div class="col-lg-6 col-sm-12 mb-12">
-      <div class="rightContent">
+      <div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="videoWrapper">
                        <iframe width="560" height="600" src="https://storage.vidzai.com/VidzShareAudioVideoDocs/Sasya/SasyaSystems_WhatWeDo_v1.mp4" frameborder="0" allowfullscreen>                          </iframe> 
                     </div>
                 </div>
       </div>
+    
   <div class="clearer"></div>
 
 </div>
@@ -415,37 +661,42 @@ padding-right:70px;
   {{ if site.Data.homepage.skill.enable }}
   {{ with site.Data.homepage.skill }}
   <!-- skills -->
+
   <section class="section">
     <h2 class="contentHeading">How do we do it</h2>
     <div class="image-container">
-      <div class="column">
+      <div class="col-lg-4 col-md-4 text-center">
         <img src="img/Measure.png" alt="Snow" width="60%" height="40%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
           <h4 class="contentsmallHeading">Measure</h4>
           <p class="mb-0 w-100 tab-content-text-width maccontext">Sasya <b>sensors</b> precisely</br>
            <div class="maccontext"> <b>Measure</b></div>
       
-         <div class="mb-0 w-100 tab-content-text-width contenttext"> soil moisture potential, ambient & soil temperature, humidity, CO2, Luminescence, Dissolved Oxygen, Nitrates, pH, TDS etc.
+         <div class="mb-0 w-100 tab-content-text-width maccontext"> soil moisture potential, ambient & soil temperature, humidity, CO2, Luminescence, Dissolved Oxygen, Nitrates, pH, TDS etc.
 
          </div>
       </div>
       </div>
-      <div class="column">
+    </br>
+  </br>
+      <div class="col-lg-4 col-md-4 text-center">
         <img src="img/Control.png" alt="Forest" width="60%" height="40%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
           <h4 class="contentsmallHeading">Control</h4>
           <p class="mb-0 w-100 tab-content-text-width maccontext">Sasya <b>Gateway & Controller has</b> </br>
             <div class="maccontext"> <b>Control</b></div>
-            <div class="mb-0 w-100 tab-content-text-width contenttext">tables, trigger points, optimum range, within which the sensed parameters should operate. This is available locally & on-the-cloud</div>
+            <div class="mb-0 w-100 tab-content-text-width maccontext">tables, trigger points, optimum range, within which the sensed parameters should operate. This is available locally & on-the-cloud</div>
 
             </p>
       </div>
       </div>
-      <div class="column">
+    </br>
+  </br>
+      <div class="col-lg-4 col-md-4 text-center">
         <img src="img/automation.png" alt="Mountains" width="60%" height="40%">
         <div class="align-self-center mb-0 text-xs-left text-lg-center align-items-center overflow-hidden">
           <h4 class="contentsmallHeading">Automate</h4>
-          <p class="mb-0 w-100 tab-content-text-width contenttext">Sasya <b>Automation Bus can</b></br>
+          <p class="mb-0 w-100 tab-content-text-width maccontext">Sasya <b>Automation Bus can</b></br>
             <div class="maccontext"> <b>Automate</b></div>
             <div class="mb-0 w-100 tab-content-text-width contenttext">any water-pump, sprinklers, feeders, fans, compressors and other prime-movers to create end-to-end workflow 
             </div>
@@ -460,6 +711,7 @@ padding-right:70px;
     <lottie-player src="images/MCA_SasyaValueProp.json" background="transparent"  speed="1"  style="width: 100%; height: 300px;" loop autoplay></lottie-player>
     <!--<img src="images/lotties.gif"  width="100%">-->
   </div>
+  <br/><br/><br/><br/><br/><br/>
   <!-- /skills -->
   {{ end }}
   {{ end }}

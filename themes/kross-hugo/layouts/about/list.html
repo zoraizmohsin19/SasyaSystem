@@ -2,24 +2,30 @@
 {{ define "main" }}
 <link rel="stylesheet" href="plugins/bootstrap/style.min.css">
 <style>
-  table, td, th {  
-
-  text-align:center;
+.team{
+  padding-left: 100px;
 }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
+.teamimage{
+  width:500px;
+  height:600px;
 }
-
-th, td {
-  padding: 15px;
+@media(max-width: 768px){
+  .teamimage{
+  width:650px;
+  height:750px;
 }
-.Features{
-  background-image: url('/images/backgrounds/bg-dots.png');
+.team{
+  padding-left: 50px;
 }
-.alignleft{
-  text-align: left;
+}
+@media(max-width: 468px){
+  .teamimage{
+  width:300px;
+  height:400px;
+}
+.team{
+  padding-left: 50px;
+}
 }
 
 </style>
@@ -107,29 +113,20 @@ th, td {
 {{ with site.Data.about.team }}
 
 <h2 class="contentHeading">Sasya Core Team and Advisors</h2>
-<table class="Features">
-  <tr class="contentsmallHeading">
-    <th>Core Member</th>
-    <th></th>
-    <th>Advisory</th>
-  </tr>
-  <tr>
-    <td><img src="\images\team\Smember1.png"></td>
-    <td style="text-align: left;"><img src="\images\team\cmember1.png"> </td>
-    <td><img src="\images\team\Amember1.png"></td>
-  </tr>
-  <tr>
-    <td><img src="\images\team\Smember2.png"></td>
-    <td style="text-align: left;"><img src="\images\team\cmember2.png"></td>
-    <td><img src="\images\team\Amember2.png"></td>
-  </tr>
-  <tr>
-    <td><img src="\images\team\Smember3.png"></td>
-    <td style="text-align: left;"><img src="\images\team\cmember3.png"></td>
-    <td><img src="\images\team\Amember3.png"></td>
-  </tr>
+<div class="row">
+  <div class="col-lg-6 col-md-12 col-sm-12 alignsas contenttext team">
+    <img src="\images\team\core.png" alt="Snow" class="teamimage">
+    
+              </div>
   
-</table>
+              <div class="col-lg-6 col-md-12 col-sm-12 team">
+                <img src="\images\team\advisory.png" alt="Snow" class="teamimage">
+</div>
+   
+
+  </div>
+
+
 
 {{ end }}
 {{ end }}

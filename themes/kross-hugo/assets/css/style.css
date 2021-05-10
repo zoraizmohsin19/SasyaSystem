@@ -463,7 +463,7 @@ textarea.form-control {
   position: relative
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
   .hero-area {
     padding: 200px 0 150px;
     overflow: hidden
