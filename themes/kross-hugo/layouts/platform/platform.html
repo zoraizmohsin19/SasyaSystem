@@ -12,7 +12,7 @@
         position: relative;
         top: 0;
         left: 300px;
-        z-index:3;
+        z-index:1;
 		    height: 557px;
 		  width: 668px;
       }
@@ -20,15 +20,15 @@
         position: absolute;
         top: 100px;
         left: 320px;
-		    z-index:1;
+		    z-index:2;
 		    height: 440px;
 		    width: 305px;
       }
 	 .image3 {
         position: absolute;
         top: 225px;
-        left: 350px;
-	      z-index:1;
+        left: 370px;
+	      z-index:3;
 		    height: 315px;
 		    width: 600px;
       }
@@ -41,7 +41,7 @@
         position: relative;
         top: 0;
         left: 0px;
-        z-index:3;
+        z-index:1;
 	  	height: 279px;
 		  width: 334px;
       }
@@ -49,7 +49,7 @@
         position: absolute;
         top: 50px;
         left: 20px;
-	    	z-index:1;
+	    	z-index:2;
 		    height: 220px;
 		    width: 152px;
       }
@@ -57,17 +57,20 @@
         position: absolute;
         top: 115px;
         left: 42px;
-	     z-index:1;
+	     z-index:3;
 		height: 153px;
 		width: 300px;
       }
 }
-@media (max-width: 68px) {
+.modal.show .modal-dialog {
+    max-width: 80%;
+}
+@media (max-width: 468px) {
       .image1 {
         position: relative;
         top: 0;
         left: 0px;
-        z-index:3;
+        z-index:1;
 	  	height: 279px;
 		  width: 334px;
       }
@@ -75,7 +78,7 @@
         position: absolute;
         top: 50px;
         left: 20px;
-	    	z-index:1;
+	    	z-index:2;
 		    height: 220px;
 		    width: 152px;
       }
@@ -83,10 +86,18 @@
         position: absolute;
         top: 115px;
         left: 42px;
-	     z-index:1;
+	     z-index:3;
 		height: 153px;
 		width: 300px;
       }
+}
+@media (max-width: 768px) {
+.modal-body {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
 }
 </style>
 
@@ -99,15 +110,84 @@
 </br>
 
   <div class="col-lg-12 col-md-12 col-sm-12 parent">
-    <img class="image1" src="/images/platform/platform1.svg"/>
-    <img class="image2" src="/images/platform/platform2.svg"/>
-  <img class="image3" src="/images/platform/platform3.svg"/>
+    <img class="image1" src="/images/platform/platform1.svg" data-toggle="modal" data-target="#myModal"/>
+    <img class="image2" src="/images/platform/platform2.svg" data-toggle="modal" data-target="#myModalOne"/>
+  <img class="image3" src="/images/platform/platform3.svg" data-toggle="modal" data-target="#myModalTwo"/>
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <img src = "/images/platform/item1.png"/><br/> <br/>
+          <img src = "/images/platform/item2.png"/>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<!--model 2">-->
+<!-- Modal -->
+<div class="modal fade" id="myModalOne" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <img src = "/images/platform/item5.png"/><br/> <br/>
+        <img src = "/images/platform/item6.png"/>
+      </div>
+     
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+<!--model 3">-->
+<!-- Modal -->
+<div class="modal fade" id="myModalTwo" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <img src = "/images/platform/item3.png"/><br/> <br/>
+        <img src = "/images/platform/item4.png"/>
+      </div>
+     
+    </div>
+    
+  </div>
+</div>
+
+</div>
 
   
   
 <!--<div class="contenttext">-->
       {{- partial "footer.html" . -}}
+
+     
     </body>
 </html>
