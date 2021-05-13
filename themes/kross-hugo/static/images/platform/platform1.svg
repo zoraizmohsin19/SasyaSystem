@@ -306,15 +306,41 @@ OjUzKzAwOjAwIJhLkQAAAABJRU5ErkJggg==" />
 
 <text font-size="250%" x="50" y="75" style="font-size:3em" fill="black">
 <tspan x="50" y="75" fill="white">01</tspan>
-<tspan x="100" y="75" fill="black">Configure Device</tspan>
+<tspan x="120" y="75" fill="black">Configure Device</tspan>
 
  </text>
 <text font-size="250%" x="50" y="125" fill="black" style="font-size:3em">  Data on Sasya Cloud</text>
-<text font-size="150%" x="680" y="75" fill="black" >Sasya GoMos cloud app runs 24X7 securely to ingest 
-</text>
-<text font-size="150%" x="680" y="115" fill="black" > high speed data from its thousands of sensors</text>
-<text font-size="150%" x="680" y="145" fill="black">Configurations of devices, sensors, payloads, alerts,</text>
-<text font-size="150%" x="680" y="175" fill="black"> rules and trigger points can be done on GoMos</text>
+<text font-size="150%" x="680" y="75" fill="black" >Sasya GoMos cloud app runs 24X7 securely to ingest </text>
 
+<text font-size="150%" x="680" y="95" fill="black" > high speed data from its thousands of sensors</text>
+<text font-size="150%" x="680" y="135" fill="black">Configurations of devices, sensors, payloads, alerts,</text>
+<text font-size="150%" x="680" y="155" fill="black"> rules and trigger points can be done on GoMos</text>
+
+<text font-size="170%" x="680" y="235" fill="blacsk" >API access is available on GoMos  </text>
+
+<text font-size="170%" x="680" y="265" fill="black" > to get the raw or aggregated sensor </text>
+<text font-size="170%" x="680" y="305" fill="black">send it back to GoMos for  </text>
+<text font-size="170%" x="680" y="335" fill="black">Automation of devices</text>
+
+<image x="1080" y="205" width="136" height="189" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAAB+CAMAAAB8iZ0uAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAtFBMVEVHuutetNl7rcKSp7Cd
+pKeXpqxTt+JDrtwkXXYNIywEDA8AAABHR0eZmZmjo6M9PT0SLzsfUWcWOkkfHx+Pj49wcHAJFx0p
+KSkKCgpcXFxmZmb///+6vcSKrz8eTCVku+Fru99Ouul5u9pVuuasvcmPvNOzvcadvM5yu9yWvNCA
+u9eIvNVdu+SkvMsjIyVRU1YMDAw6Oz2usbiLjpOAgoeXmp9GR0kXGBijpatdXmJpam7xWilShJOJ
+AAAAAWJLR0QbAmDUpAAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAAd0SU1FB+UFDQcvDzc7REUAAAJ1
+SURBVGje7dd7W5swFAZwprt0YtG5bqvuOMpFWnqha/G27ft/r0EoWpMTyAnBPbq8/1XJz5i8T1Ic
+x8bGxgbPm4PDt+8O3usDHwYfj1w0x0OP5QT/9emnVvrMleTYq/NZ8sRpiz2Q0e7owf4ie2TQbH+V
+jfvmPWYseeao2ZZO+0TBdtXt8floL3v2cO/HF2Mt+9xTyYWWPVKyh1T7exkl2vPKR8k2Ida29gu0
+oTX/n/1S9/LV2Zd19O194VL6wdrsw486r932J53tIIxwO4ZJg/2Ek9lXEKN0BHDV1Y4hwZcEYNrV
+Lk5ddFFmAClnS7kG28fsuQE7AQgxOxXXW8ee4zUxYqc92lhRigrCoqtdzA8CtIJm7KVoh6bsmWgv
+oNzjjvYK0BKmpmykKDH7kwbslWgnpmyxhGUFi23oaE8BK6FvzhZOqxCzlfPEFopSVlC4d/Rs4bRK
+KztbZ5r2z83GrRShhDGzoy3ARs/Oi5GVLRSFvQX4xd0D11p2Vo6sbODoJWoT3klKOy/ueRCvTFZB
+WJqxuRKGqE1ck9rmSrj7Z7rarMl8UdIe7dikzZUQTNqA2UHXnsz/je08o01e7z7tUGonzL7Rsm9b
+7JjZkGvY2VbNhjXZvtuySe3Go2sSVscKZFQ7Z8Pu6/HYXta5dmm55ZrZZMMdzb6n2L9I9AYoNm1R
+1iT7hmT/Jtl5j3af6428szQlJtgLGu1M1O04INq7q1zBTnwq7QQrNTuZkGkel9ozDZrDZTZ1Hx/w
+pNWeBr7OxKNw93W1yY7TRGfmEaxShfXWWpWooSd95Q8WQ+OtzY+XnspqcONwa1vb2ta2trWf07bh
+8xfFsl2KKDteoQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMS0wNS0xM1QwNzo0NzoxNSswMDowMDq0
+saMAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjEtMDUtMTNUMDc6NDc6MTUrMDA6MDBL6QkfAAAAAElF
+TkSuQmCC" />
 
 </svg>
