@@ -303,4 +303,16 @@ AKrRKDwvi54pWaYeQdkS9LKoKXACAPSJvywDAFSrUfK80eHr1F+n4Fn2dQAAesRfmgEA6kHYXHnE
 TQCAAfEXaACA+vN3tlgETQCAAfv/hv2CIwlMfEMAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMDUt
 MTFUMTA6NDQ6NTMrMDA6MDBRxfMtAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA1LTExVDEwOjQ0
 OjUzKzAwOjAwIJhLkQAAAABJRU5ErkJggg==" />
+
+<text font-size="250%" x="50" y="75" style="font-size:3em" fill="black">
+<tspan x="50" y="75" fill="white">01</tspan>
+<tspan x="80" y="75" fill="black">Configure Device</tspan>
+
+ </text>
+<text font-size="250%" x="50" y="125" fill="black" style="font-size:3em">  Data on Sasya Cloud</text>
+<text font-size="200%" x="630" y="75" fill="black" >Sasya GoMos cloud app runs 24X7 securely to ingest high speed data from its thousands of sensors
+</text>
+<text font-size="200%" x="630" y="115" fill="black">Configurations of devices, sensors, payloads, alerts, rules and trigger points can be done on GoMos</text>
+
+
 </svg>
