@@ -512,6 +512,9 @@ padding-right:70px;
   text-align: justify;
   text-justify: inter-word;
 }
+.cus{
+  padding-top: 100px;
+}
 </style>
 
   <!-- hero area -->
@@ -737,28 +740,10 @@ padding-right:70px;
   {{ end }}
 
 
-  {{ if site.Data.homepage.service.enable }}
-  {{ with site.Data.homepage.service }}
   
-  <!-- /services -->
-  {{ end }}
-  {{ end }}
-
-
-  {{ if site.Data.homepage.portfolio.enable }}
- 
-  {{ end }}
-
-
-  {{ if site.Data.homepage.testimonial.enable }}
-  {{ with site.Data.homepage.testimonial }}
+<br><br>
   
-  <!-- /testimonial -->
-  {{ end }}
-  {{ end }}
-
-  
-  <h2 class="contentHeading">Our customers who speak for us</h2>
+  <h2 class="contentHeading cus">Our customers who speak for us</h2>
 
   {{ if site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->
