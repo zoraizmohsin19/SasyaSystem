@@ -513,8 +513,13 @@ padding-right:70px;
   text-justify: inter-word;
 }
 .cus{
-  padding-top: 100px;
+  padding-top: 120px;
 }
+.sectionCl{
+  padding-top: 20px;
+}
+
+
 </style>
 
   <!-- hero area -->
@@ -747,7 +752,7 @@ padding-right:70px;
 
   {{ if site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->
-  <section class="section pb-0">
+  <section class="sectionCl pb-0">
     <div class="container">
       {{ partial "client-slider.html" . }}
     </div>
@@ -757,7 +762,7 @@ padding-right:70px;
 
   {{ if site.Data.homepage.clients_logo_slider1.enable }}
   <!-- client logo slider -->
-  <section class="section pb-0">
+  <section class="sectionCl pb-0">
     <div class="container">
       {{ partial "client-slider1.html" . }}
     </div>

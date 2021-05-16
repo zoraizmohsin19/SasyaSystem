@@ -102,6 +102,23 @@
 .alignplat{
   padding:70px;
 }
+.footer-sectionP{
+    padding-top: 50px;
+}
+.ali{
+  text-align: center;
+
+}
+.maccontext
+{
+  color:#000!important;;
+  font-family: "Eras ITC", "Eras Light ITC",  sans-serif!important;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-transform: none;
+  text-align: center;
+}
 </style>
 
 <head>
@@ -112,19 +129,54 @@
 
 <br><br><br><br><br><br>
 
-<h2 class="contentHeading">Platform</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12 parent">
+<h1 class="contentHeading">Platform</h2>
+<h3 class="contenttext ali"><b>Cloud Based Data Store, Analytics and Mobile App</b></h3>
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title contentHeading">Work Process</h2>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="/images/platform/icon1.png" class="mb-4" alt="icon">
+        <h4 class="contentsmallHeading">Configure Device Data on Sasya Cloud</h4>
+        <p class="mb-0 w-100 tab-content-text-width maccontext">Sasya GoMos cloud app runs 24X7 securely to ingest high speed data from its thousands of sensors.</p>
+        <p class="mb-0 w-100 tab-content-text-width maccontext">Configurations of devices, sensors, payloads, alerts, rules and trigger points can be done on GoMos. </p>
+       
+      </div>
+      
+      
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="/images/platform/icon2.png" class="mb-4" alt="icon">
+        <h4 class="contentsmallHeading">Analytics & Ops Dashboard</h4>
+        <p class="mb-0 w-100 tab-content-text-width maccontext">Dashboards to see the real time sensor data, and last alerts generated.        </p>
+        <p class="mb-0 w-100 tab-content-text-width maccontext">Operating dashboard to see status of automated devices and manually operate devices</p>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
+        <img src="/images/platform/icon3.png" class="mb-4" alt="icon">
+        <h4 class="contentsmallHeading">Notifications</h4>
+        <p class="mb-0 w-100 tab-content-text-width maccontext">Timely Alerts and Notifications with current reading of the parameters and possible advisory on next action.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!--not required
+<div class="col-lg-12 col-md-12 col-sm-12 parent">
     <img class="image1" src="/images/platform/platform1.svg" data-toggle="modal" data-target="#myModal"/>
     <img class="image2" src="/images/platform/platform2.svg" data-toggle="modal" data-target="#myModalOne"/>
   <img class="image3" src="/images/platform/platform3.svg" data-toggle="modal" data-target="#myModalTwo"/>
   </div>
 
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+    <!--<div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
+      <!--  <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -143,11 +195,11 @@
 
 <!--model 2">-->
 <!-- Modal -->
-<div class="modal fade" id="myModalOne" role="dialog">
+  <!--<div class="modal fade" id="myModalOne" role="dialog">
   <div class="modal-dialog">
   
     <!-- Modal content-->
-    <div class="modal-content">
+     <!-- <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -166,11 +218,11 @@
 
 <!--model 3">-->
 <!-- Modal -->
-<div class="modal fade" id="myModalTwo" role="dialog">
+  <!--<div class="modal fade" id="myModalTwo" role="dialog">
   <div class="modal-dialog">
   
     <!-- Modal content-->
-    <div class="modal-content">
+     <!-- <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -186,7 +238,7 @@
 </div>
 
 </div>
-
+-->
 <div class="contenttext alignplat">
 
   <br/><br/>
@@ -195,8 +247,7 @@
 
             Sasya Systems has the back-end platform ready which is currently being used in SaaS mode for its
 various clients. The platform provides rich interfaces that will be utilized in the project, such as -
-<li>User role set up and login screens based on userid and password. Subsequent, screens will
-automatically show the devices and reports as per the user entitlement.</li>
+<li>API access is available on GoMos to get the raw or aggregated sensor data and create your actions and send it back to GoMos for Automation of devices</li>
 <li>Configurations of devices, sensors, payloads, alerts, rules and trigger points.</li>
 <li>Dashboards to show the real time sensor data, and last alerts generated.</li>
 <li>Historic data is shown in graphs and table format. Data can be downloaded for offline
@@ -215,7 +266,42 @@ provided by PAU / World Bank will be uploaded for general public.</li>
   
   
 <!--<div class="contenttext">-->
-      {{- partial "footer.html" . -}}
+  <footer class="bg-dark footer-sectionP">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">santosh@sasyasystems.com</p>
+  
+               
+              <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+                 
+                 <span class="mb-3"></span><a class="text-white" href="#"><i class="ti-facebook"></i></a>
+                
+                 <span class="mb-3"></span><a class="text-white" href="#"><i class="ti-instagram"></i></a>
+           
+            <span class="mb-3"></span><a class="text-white" href="#"><i class="ti-linkedin"></i></a>
+            <span class="mb-3"></span><a class="text-white" href="#"><i class="ti-youtube"></i></a>
+            
+              </ul>
+              
+  
+  
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Phone</h5>
+            <p class="text-white paragraph-lg font-secondary">+91 8197 239 206</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Address</h5>
+            <p class="text-white paragraph-lg font-secondary">426, 19th Main,23rd Cross,HSR Layout, Sector 7,Bangalore – 560102</p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </footer>
 
      
     </body>
