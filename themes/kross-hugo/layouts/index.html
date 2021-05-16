@@ -513,12 +513,13 @@ padding-right:70px;
   text-justify: inter-word;
 }
 .cus{
-  padding-top: 120px;
+  padding-top: 0px;
 }
 .sectionCl{
   padding-top: 20px;
 }
 
+.section{padding-top:0px;padding-bottom:0px}
 
 </style>
 
@@ -709,7 +710,6 @@ padding-right:70px;
             <div class="maccontext"> <b>Automate</b></div>
             <div class="mb-0 w-100 tab-content-text-width contenttext">any water-pump, sprinklers, feeders, fans, compressors and other prime-movers to create end-to-end workflow 
             </div>
-
           </p>
         </div>
       </div>
@@ -717,10 +717,9 @@ padding-right:70px;
     </div>
   </section>
   <div class="lotti">
-    <lottie-player src="images/MCA_SasyaValueProp.json" background="transparent"  speed="1"  style="width: 100%; height: 300px;" loop autoplay></lottie-player>
-    <!--<img src="images/lotties.gif"  width="100%">-->
+    <lottie-player src="images/MCA_SasyaValueProp.json" background="transparent"  speed="1"  style="width: 100%; height: 20%;" loop autoplay></lottie-player>
   </div>
-  <br/><br/><br/><br/><br/><br/>
+  
   <!-- /skills -->
   {{ end }}
   {{ end }}
@@ -731,9 +730,7 @@ padding-right:70px;
   <!-- /experience -->
   {{ end }}
   {{ end }}
-<br/>
-<br/>
-<br/>
+
   {{ if site.Data.homepage.education.enable }}
   {{ with site.Data.homepage.education }}
   
