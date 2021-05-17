@@ -12,7 +12,7 @@
       <div class="col-lg-8 mx-auto">
         <div class="bg-white rounded text-center p-5 shadow-down">
           <h4 class="contentsubHeading mb-80">Contact Form</h4>
-          <form action="{{site.Params.contact.form_action}}" method="POST" id="theForm" class="row" onsubmit="validateCaptcha()">
+          <form action="#" method="POST" id="theForm" class="row" onsubmit="validateCaptcha()">
             <div class="contenttext col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
               <label for="nameId"></label>
@@ -216,7 +216,7 @@ function validateCaptcha() {
   debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
     sendEmail();
-    document.getElementById('theForm').submit();
+    //document.getElementById('theForm').submit();
   }else{
     alert("Invalid Captcha. try Again");
     createCaptcha();
