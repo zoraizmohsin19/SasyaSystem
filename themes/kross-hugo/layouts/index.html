@@ -513,7 +513,7 @@ padding-right:70px;
   text-justify: inter-word;
 }
 .cus{
-  padding-top: 0px;
+  padding-top: 50px;
 }
 .sectionCl{
   padding-top: 20px;
@@ -619,7 +619,7 @@ padding-right:70px;
         <div class="col-lg-10 mx-auto text-center">
           {{ with site.Data.homepage.about }}
 
-          <h2 class="contentHeading">Why &amp; What SASYA Systems does</h2>
+          <h2 class="contentHeading cus">Why &amp; What SASYA Systems does</h2>
           <p class="contenttext">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -673,7 +673,7 @@ padding-right:70px;
   <!-- skills -->
 
   <section class="section">
-    <h2 class="contentHeading">How do we do it</h2>
+    <h2 class="contentHeading cus">How do we do it</h2>
     <div class="image-container">
       <div class="col-lg-4 col-md-4 text-center">
         <img src="img/Measure.png" alt="Snow" width="60%" height="40%">
@@ -745,7 +745,7 @@ padding-right:70px;
   
 <br><br>
   
-  <h2 class="contentHeading cus">Our customers who speak for us</h2>
+  <h2 class="contentHeading">Our customers who speak for us</h2>
 
   {{ if site.Data.homepage.clients_logo_slider.enable }}
   <!-- client logo slider -->

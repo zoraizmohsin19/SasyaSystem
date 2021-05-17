@@ -15,12 +15,15 @@
           <form action="{{site.Params.contact.form_action}}" method="POST" id="theForm" class="row" onsubmit="validateCaptcha()">
             <div class="contenttext col-md-6">
               <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+              <label for="nameId"></label>
             </div>
             <div class="contenttext col-md-6">
               <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+              <label for="emailId"></label>
             </div>
 			<div class="contenttext col-12">
                <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" class="form-control px-0 mb-4">
+               <label for="mobileId"></label>
             </div>
             <div class="contenttext col-12">
               <textarea name="message" id="message" class="form-control px-0 mb-4"
@@ -121,7 +124,66 @@
 		}
 	})(jQuery);
   </script> -->
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
 <script>
+  
+//email
+function sendEmail() { 
+    let name = document.getElementById("name").value;
+    if(name == undefined || name.trim().length == 0){
+        document.getElementById("nameId").innerHTML = "Name is required please enter name ."
+        return;
+    }
+    let email = document.getElementById("email").value;
+    if(email == undefined || email.trim().length == 0){
+        document.getElementById("emailId").innerHTML = "Email is required please enter email ."
+        return;
+    }
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test(email)){
+        document.getElementById("emailId").innerHTML = "Email is not valid please enter valid email ."
+        return;
+    }
+    
+    let message = document.getElementById("mobile").value;
+    if(message == undefined || message.trim().length == 0){
+        document.getElementById("mobileId").innerHTML = "message is required please enter message ."
+        return;
+    }
+   let messageBody=  " name :" +name + " \n  emailFrom : "+ email + " \n  message :" + message ;
+   let subject = "New Enquiry Request";
+   console.log("this is message body", messageBody)
+  Email.send({ 
+    //SecureToken : "0d5d4d1f-8c4c-4043-971e-db1304e60659",
+    Host: "smtp.gmail.com",
+    Username:"nargishart.bhadohi@gmail.com",
+    Password:"Takreem123@",
+    To: "arshihasankhn@gmail.com", 
+    From: "nargishart.bhadohi@gmail.com", 
+    Subject: subject, 
+    Body: messageBody, 
+  }) 
+    .then(function (message) { 
+        console.log("This is error", message)
+      alert("mail sent successfully") 
+    }); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//captcha
+
 var code;
 function createCaptcha() {
   //clear the contents of captcha div first 
@@ -154,6 +216,7 @@ function validateCaptcha() {
   event.preventDefault();
   debugger
   if (document.getElementById("cpatchaTextBox").value == code) {
+    sendEmail();
     document.getElementById('theForm').submit();
   }else{
     alert("Invalid Captcha. try Again");
