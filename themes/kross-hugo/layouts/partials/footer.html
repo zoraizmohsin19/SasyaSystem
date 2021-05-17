@@ -145,26 +145,24 @@ function sendEmail() {
         return;
     }
     
-    let message = document.getElementById("mobile").value;
-    if(message == undefined || message.trim().length == 0){
+    let mobile = document.getElementById("mobile").value;
+    if(mobile == undefined || mobile.trim().length == 0){
         document.getElementById("mobileId").innerHTML = "message is required please enter message ."
         return;
     }
-   let messageBody=  " name :" +name + " \n  emailFrom : "+ email + " \n  message :" + message ;
+
+    let message = document.getElementById("message").value;
+
+   let messageBody=  " name :" +name +" mobile :" +mobile + " \n  email : "+ email + " \n  message :" + message ;
    let subject = "New Enquiry Request";
    console.log("this is message body", messageBody)
   Email.send({ 
-    //SecureToken : "0d5d4d1f-8c4c-4043-971e-db1304e60659",
-    Host: "smtp.elasticemail.com",
-    Username:"nargishart.bhadohi@gmail.com",
-    Password:"FBDC3995D1C901A5809F349C03A1D023EBA6",
-    Port:"2525",
+    SecureToken : "6b93e82e-fac0-4153-9384-c116baa2e17f",
     To: "arshihasankhn@gmail.com", 
     From: "nargishart.bhadohi@gmail.com", 
     Subject: subject, 
     Body: messageBody, 
-  }) 
-    .then(function (message) { 
+  }).then(function (message) { 
         console.log("This is error", message)
       alert("mail sent successfully") 
     }); 
